@@ -1,0 +1,17 @@
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restuarant_Management.Services.deps.json
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restuarant_Management.Services.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restuarant_Management.Services.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restauarant_Management.Models.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restaurant_Management.DataAccess.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restauarant_Management.Models.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\bin\Debug\net6.0\Restaurant_Management.DataAccess.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.csproj.AssemblyReference.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.AssemblyInfoInputs.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.AssemblyInfo.cs
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.csproj.CoreCompileInputs.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.csproj.CopyComplete
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\refint\Restuarant_Management.Services.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\Restuarant_Management.Services.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.Services\obj\Debug\net6.0\ref\Restuarant_Management.Services.dll

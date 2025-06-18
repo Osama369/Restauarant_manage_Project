@@ -1,0 +1,15 @@
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\bin\Debug\net6.0\Restaurant_Management.DataAccess.deps.json
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\bin\Debug\net6.0\Restaurant_Management.DataAccess.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\bin\Debug\net6.0\Restaurant_Management.DataAccess.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\bin\Debug\net6.0\Restauarant_Management.Models.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\bin\Debug\net6.0\Restauarant_Management.Models.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.csproj.AssemblyReference.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.AssemblyInfoInputs.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.AssemblyInfo.cs
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.csproj.CopyComplete
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\refint\Restaurant_Management.DataAccess.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\Restaurant_Management.DataAccess.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restaurant_Management.DataAccess\obj\Debug\net6.0\ref\Restaurant_Management.DataAccess.dll
