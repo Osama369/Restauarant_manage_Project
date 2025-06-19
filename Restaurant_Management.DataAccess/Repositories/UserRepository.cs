@@ -15,12 +15,12 @@ namespace Restaurant_Management.DataAccess.Repositories
 
         public UserRepository(MyDbContext _dbcontext)
         {
-            _dbcontext = _dbcontext;
+            this._dbcontext = _dbcontext;
         }
 
         public async Task<User> AddAsync(User user) 
         {
-            await _dbcontext.User.AddAsync(user);  // add 
+            await _dbcontext.Users.AddAsync(user);  // add 
             await _dbcontext.SaveChangesAsync();  // saveChange 
             return user; // return 
         
@@ -30,7 +30,7 @@ namespace Restaurant_Management.DataAccess.Repositories
 
             try
             {
-                var res = await _dbcontext.User.FindAsync(id);
+                var res = await _dbcontext.Users.FindAsync(id);
                 return res;
 
             } catch (Exception e) { 
@@ -42,13 +42,13 @@ namespace Restaurant_Management.DataAccess.Repositories
 
         public async Task<List<User>> GetAllAsync() 
         {
-            return _dbcontext.User.ToList();
+            return _dbcontext.Users.ToList();
         }
 
         public async Task<User> Update(User user) 
         
         { 
-          _dbcontext.User.Update(user);
+          _dbcontext.Users.Update(user);
             await _dbcontext.SaveChangesAsync();
             return user;
         }
@@ -57,7 +57,7 @@ namespace Restaurant_Management.DataAccess.Repositories
         public async Task Remove(User user)
 
         { 
-            _dbcontext.User.Remove(user);
+            _dbcontext.Users.Remove(user);
             await _dbcontext.SaveChangesAsync();
         }
 

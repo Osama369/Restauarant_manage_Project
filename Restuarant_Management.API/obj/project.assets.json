@@ -757,6 +757,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
           "Restauarant_Management.Models": "1.0.0",
           "Restaurant_Management.DataAccess": "1.0.0"
         },

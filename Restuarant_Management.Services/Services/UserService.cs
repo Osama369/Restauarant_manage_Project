@@ -1,4 +1,6 @@
-﻿using Restauarant_Management.Models.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using Restauarant_Management.Models.Models;
+using Restaurant_Management.DataAccess.IRepositories;
 using Restuarant_Management.Services.IServices;
 using System;
 using System.Collections.Generic;
@@ -10,10 +12,52 @@ namespace Restuarant_Management.Services.Services
 {
     public class UserService : IUserService
     {
-        public Task<User> AddUserAsync(User user)
+
+        private readonly IUserRepository _userRepository;
+        private readonly UserManager<IdentityUser> _userManager;
+       
+
+
+        public UserService(IUserRepository userRepository, UserManager<IdentityUser> _userManager) 
+        { 
+          _userRepository = userRepository;
+            this._userManager = _userManager;
+        }
+        public async  Task AddUserAsync(RegisterViewModel registerUser)
+        {
+            User user = new User();  
+            user.userEmail = registerUser.Email;
+            user.name = registerUser.UserName;
+            user.password = registerUser.Password;
+            user.phone = registerUser.Phone;
+
+           
+           
+            IdentityUser identityUser = new IdentityUser
+            {
+                Email = user.userEmail,
+                UserName = user.name
+            };
+
+
+
+            var result =await _userManager.CreateAsync(identityUser,user.password);
+            if (result.Succeeded)
+            {
+                await _userRepository.AddAsync(user);
+            }
+        }
+
+
+     
+
+
+
+        public Task<User> UpdateUserAsync(User user)
         {
             throw new NotImplementedException();
         }
+
 
         public Task DeleteUserAsync(User user)
         {
@@ -30,9 +74,5 @@ namespace Restuarant_Management.Services.Services
             throw new NotImplementedException();
         }
 
-        public Task<User> UpdateUserAsync(User user)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -10,7 +10,7 @@ namespace Restuarant_Management.Services.IServices
     public interface IUserService
     {
 
-        Task<User> AddUserAsync(User user);
+        Task AddUserAsync(RegisterViewModel registerUser);
 
         Task<User> UpdateUserAsync(User user);
 

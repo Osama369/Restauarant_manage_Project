@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Restuarant_Management.API.Controllers
@@ -10,12 +11,14 @@ namespace Restuarant_Management.API.Controllers
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
-
+        
         private readonly ILogger<WeatherForecastController> _logger;
+        //private readonly SignInManager<IdentityUser> _signInManager;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+           
         }
 
         [HttpGet(Name = "GetWeatherForecast")]

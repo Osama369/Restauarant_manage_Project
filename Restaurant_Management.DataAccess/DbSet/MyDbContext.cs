@@ -25,7 +25,7 @@ namespace Restaurant_Management.DataAccess.DbSet
         public DbSet<Role> Role { get; set; }
         public DbSet<Screen> Screen { get; set; }
         public DbSet<Supplier> Supplier { get; set; }
-        public DbSet<User> User { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
     }

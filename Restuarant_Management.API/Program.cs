@@ -25,10 +25,12 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<MyDbContext>()
     .AddDefaultTokenProviders();
 
+//builder.Services.Configure<IdentityOptions>(options =>
+//{
+//    options.SignIn.RequireConfirmedEmail = false;
+//});
 
 // add services and repo
-
-
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
