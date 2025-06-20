@@ -20,5 +20,7 @@ namespace Restuarant_Management.Services.IServices
 
         Task<List<User>> GetAllUserAsync();
 
+        Task<User> GetByEmailAsync(string email);
+
     }
 }

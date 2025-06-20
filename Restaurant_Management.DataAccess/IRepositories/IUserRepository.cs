@@ -16,5 +16,6 @@ namespace Restaurant_Management.DataAccess.IRepositories
         Task Remove(User user);
 
         Task<List<User?>> GetAllAsync();
+        Task<User> GetByEmailAsync(string email);
     }
 }

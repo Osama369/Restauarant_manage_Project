@@ -1,4 +1,5 @@
-﻿using Restauarant_Management.Models.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Restauarant_Management.Models.Models;
 using Restaurant_Management.DataAccess.DbSet;
 using Restaurant_Management.DataAccess.IRepositories;
 using System;
@@ -60,6 +61,11 @@ namespace Restaurant_Management.DataAccess.Repositories
             _dbcontext.Users.Remove(user);
             await _dbcontext.SaveChangesAsync();
         }
+         
+        public async Task<User> GetByEmailAsync(string email)
+        {
+            return await _dbcontext.Users.FirstOrDefaultAsync(u => u.userEmail == email);
 
+        }
     }
 }

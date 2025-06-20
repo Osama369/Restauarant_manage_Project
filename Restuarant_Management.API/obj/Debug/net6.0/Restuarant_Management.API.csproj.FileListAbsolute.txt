@@ -68,3 +68,4 @@ C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.API\bin\Debug\net6.0\Restaurant_Management.DataAccess.pdb
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.API\bin\Debug\net6.0\Restuarant_Management.Services.dll
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.API\bin\Debug\net6.0\Restuarant_Management.Services.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restuarant_Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

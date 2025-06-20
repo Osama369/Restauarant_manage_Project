@@ -11,7 +11,7 @@ namespace Restauarant_Management.Models.Models
     {
         public int? id { get; set; }
         public string name { get; set; }
-        public int? roleId { get; set; }
+        public int? roleId { get; set; } //  e.g 1.Admin 2. Staff
         public string? userEmail { get; set; } 
         [NotMapped]
         public string? password { get; set; }

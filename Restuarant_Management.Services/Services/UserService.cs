@@ -30,6 +30,7 @@ namespace Restuarant_Management.Services.Services
             user.name = registerUser.UserName;
             user.password = registerUser.Password;
             user.phone = registerUser.Phone;
+            user.roleId = registerUser.roleId;
 
            
            
@@ -39,19 +40,15 @@ namespace Restuarant_Management.Services.Services
                 UserName = user.name
             };
 
-
+             // creatAsyn take identityUser and password 
 
             var result =await _userManager.CreateAsync(identityUser,user.password);
             if (result.Succeeded)
             {
+                user.identityUserId = identityUser.Id;
                 await _userRepository.AddAsync(user);
             }
         }
-
-
-     
-
-
 
         public Task<User> UpdateUserAsync(User user)
         {
@@ -74,5 +71,9 @@ namespace Restuarant_Management.Services.Services
             throw new NotImplementedException();
         }
 
+        public async Task<User?> GetByEmailAsync(string email)
+        {
+          return await _userRepository.GetByEmailAsync(email);
+        }
     }
 }

@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Restaurant_Management.DataAccess.DbSet;
 using Restaurant_Management.DataAccess.IRepositories;
 using Restaurant_Management.DataAccess.Repositories;
 using Restuarant_Management.Services.IServices;
 using Restuarant_Management.Services.Services;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +27,32 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<MyDbContext>()
     .AddDefaultTokenProviders();
+
+var configuration = builder.Configuration;
+
+var key = configuration["Jwt:Key"];
+var issuer = configuration["Jwt:Issuer"];
+var audience = configuration["Jwt:Audience"];
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = issuer,
+        ValidAudience = audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+    };
+});
 
 //builder.Services.Configure<IdentityOptions>(options =>
 //{
