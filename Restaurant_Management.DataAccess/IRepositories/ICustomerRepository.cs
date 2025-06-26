@@ -13,7 +13,7 @@ namespace Restaurant_Management.DataAccess.IRepositories
         Task<Customer> Update(Customer customer);
         Task<Customer> GetByIdAsync(int id);
 
-        Task Remove(Customer customer);
+        Task Remove(int id);
 
         Task<List<Customer>> GetAllAsync();
 

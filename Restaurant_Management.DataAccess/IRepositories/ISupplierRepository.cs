@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Restaurant_Management.DataAccess.IRepositories
 {
-    internal interface ISupplierRepository
+    public interface ISupplierRepository
     {
         Task<Supplier> AddAsync(Supplier supplier);  // will get user as parameters 
         Task<Supplier> Update(Supplier supplier);
         Task<Supplier> GetByIdAsync(int id);
 
-        Task Remove(Supplier supplier);
+        Task Remove(int id );
 
         Task<List<Supplier>> GetAllAsync();
     }

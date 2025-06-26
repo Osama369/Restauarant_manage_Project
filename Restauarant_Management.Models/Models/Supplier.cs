@@ -13,6 +13,6 @@ namespace Restauarant_Management.Models.Models
 
         // collection of ledger
 
-        public ICollection<Gl_Ledger>? ledgers { get; set; }
+        //public ICollection<Gl_Ledger>? ledgers { get; set; }
     }
 }

@@ -1,12 +1,14 @@
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.deps.json
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.runtimeconfig.json
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.dll
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.pdb
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.csproj.AssemblyReference.cache
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.AssemblyInfoInputs.cache
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.AssemblyInfo.cs
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.csproj.CoreCompileInputs.cache
-C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.deps.json
-C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.dll
-C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\bin\Debug\net6.0\Restauarant_Management.Models.pdb
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.dll
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\refint\Restauarant_Management.Models.dll
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.pdb
+C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\Restauarant_Management.Models.genruntimeconfig.cache
 C:\Users\IT Support\source\repos\Restuarant_Management.API\Restauarant_Management.Models\obj\Debug\net6.0\ref\Restauarant_Management.Models.dll

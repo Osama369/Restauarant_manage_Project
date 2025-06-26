@@ -50,25 +50,25 @@ namespace Restuarant_Management.Services.Services
             }
         }
 
-        public Task<User> UpdateUserAsync(User user)
+        public async Task<User> UpdateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            return await _userRepository.Update(user);
         }
 
 
-        public Task DeleteUserAsync(User user)
+        public async Task DeleteUserAsync(User user)
         {
-            throw new NotImplementedException();
+            await _userRepository.Remove(user); 
         }
 
-        public Task<List<User>> GetAllUserAsync()
+        public async Task<List<User>> GetAllUserAsync()
         {
-            throw new NotImplementedException();
+           return   await  _userRepository.GetAllAsync();
         }
 
-        public Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _userRepository.GetByIdAsync(id);
         }
 
         public async Task<User?> GetByEmailAsync(string email)

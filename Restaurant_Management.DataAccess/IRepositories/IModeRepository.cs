@@ -9,7 +9,7 @@ namespace Restaurant_Management.DataAccess.IRepositories
 {
     public interface IModeRepository
     {
-        Task<Mode> AddAsync(Mode mode);  // will get user as parameters 
+        Task<Mode> AddAsync(Mode mode);  
         Task<Mode > Update(Mode  mode);
         Task<Mode> GetByIdAsync(int id);
 

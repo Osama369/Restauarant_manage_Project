@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Restaurant_Management.DataAccess.IRepositories
 {
-    internal interface IProductRepository
+     public  interface IProductRepository
     {
         Task<Product> AddAsync(Product prod);  // will get prod as parameters 
         Task<Product> Update(Product prod);
         Task<Product> GetByIdAsync(int id);
 
-        Task Remove(Product prod);
+        Task Remove(int id);   // delete based on id 
 
         Task<List<Product>> GetAllAsync();
     };

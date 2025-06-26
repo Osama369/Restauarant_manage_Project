@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -13,6 +13,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Add services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularClient", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -62,10 +72,20 @@ builder.Services.AddAuthentication(options =>
 // add services and repo
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-
 builder.Services.AddScoped<IUserService, UserService>();
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
+builder.Services.AddScoped<ISupplierService, SupplierService>();
+
+
+builder.Services.AddScoped<IGl_LedgerRepository, Gl_LedgerRepository>();
+builder.Services.AddScoped<IGl_LedgerService, Gl_LedgerService>();
 
 var app = builder.Build();
 
@@ -76,7 +96,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAngularClient"); // ✅ Add this
+
 
 app.UseAuthorization();
 

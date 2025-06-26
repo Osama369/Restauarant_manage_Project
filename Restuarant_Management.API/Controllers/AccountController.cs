@@ -50,11 +50,11 @@ namespace Restuarant_Management.API.Controllers
             if (!isPasswordValid)
                 return Unauthorized("Invalid email or password.");
 
-            // Step 3: Get user role
             //var roles = await _userManager.GetRolesAsync(user);
             //var roleName = roles.FirstOrDefault() ?? "Staff";
             //var roleId = roleName == "Admin" ? "1" : "2";
 
+            // Step 3: Get user role
             var userbyEmail = await _userService.GetByEmailAsync(user.Email);
             var roleId = userbyEmail.roleId ?? 2; // default to Staff
             string roleName = roleId == 1 ? "Admin" : "Staff";
@@ -68,9 +68,9 @@ namespace Restuarant_Management.API.Controllers
       var authClaims = new List<Claim>
     {
         new Claim("UserId", user.Id),
-        new Claim("RoleID", roleId.ToString()),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, roleName),
+        new Claim("RoleID", roleId.ToString()),  // 1 or 2
+        new Claim(ClaimTypes.Email, user.Email),  // email 
+        new Claim(ClaimTypes.Role, roleName),  // roleName Admin or Staff
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
     };
 
